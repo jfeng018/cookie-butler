@@ -1,5 +1,5 @@
-# 多阶段构建 - 构建阶段
-FROM node:22-alpine AS builder
+# 多阶段构建 - 构建阶段（指定 amd64 避免在 ARM 主机上 QEMU 模拟构建时 V8 JIT SIGILL）
+FROM --platform=$BUILDPLATFORM node:22-alpine AS builder
 
 # 设置工作目录
 WORKDIR /app
