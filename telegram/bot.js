@@ -22,6 +22,7 @@ const PLATFORM_KEYS = [
     'uc_token',
     'baidu',
     'ali',
+    'guangyapan',
     '115',
     'bilibili'
 ].filter((key) => platformFactory.isSupported(key));
@@ -29,6 +30,7 @@ const PLATFORM_LABELS = {
     quark: '夸克',
     uc: 'UC',
     uc_token: 'UT',
+    guangyapan: '光鸭',
     baidu: '百度',
     ali: '阿里',
     '115': '115',
@@ -150,7 +152,7 @@ function buildResultMessage(platform, payload) {
     if (payload.cookie) {
         return {
             text: `<b>${escapeHtml(platformName)}</b>\n<code>${escapeHtml(payload.cookie)}</code>`,
-            filename: `${platform}.cookie.txt`,
+            filename: platform === 'guangyapan' ? `${platform}.token.txt` : `${platform}.cookie.txt`,
             plainText: payload.cookie
         };
     }

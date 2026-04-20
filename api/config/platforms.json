@@ -133,6 +133,29 @@
       "headers": {
         "referer": "https://www.bilibili.com/"
       }
+    },
+    "guangyapan": {
+      "name": "光鸭云盘",
+      "clientId": "aMe-8VSlkrbQXpUR",
+      "defaultDeviceId": "0123456789abcdef0123456789abcdef",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36",
+      "endpoints": {
+        "deviceCode": "https://account.guangyapan.com/v1/auth/device/code",
+        "token": "https://account.guangyapan.com/v1/auth/token"
+      },
+      "params": {
+        "scope": "user",
+        "deviceCodeGrantType": "urn:ietf:params:oauth:grant-type:device_code",
+        "clientVersion": "0.0.1",
+        "deviceModel": "chrome%2F147.0.0.0",
+        "deviceName": "PC-Chrome",
+        "networkType": "NONE",
+        "osVersion": "Win32",
+        "platformVersion": "1",
+        "protocolVersion": "301",
+        "providerName": "NONE",
+        "sdkVersion": "9.0.2"
+      }
     }
   },
   "common": {

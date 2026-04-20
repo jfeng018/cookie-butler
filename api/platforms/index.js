@@ -5,6 +5,7 @@ import { AliPlatform } from './ali.js';
 import { Platform115 } from './115.js';
 import { BaiduPlatform } from './baidu.js';
 import { BilibiliPlatform } from './bilibili.js';
+import { GuangYaPanPlatform } from './guangyapan.js';
 
 /**
  * 平台工厂类 - 负责创建和管理平台实例
@@ -19,7 +20,8 @@ class PlatformFactory {
             'ali': AliPlatform,
             '115': Platform115,
             'baidu': BaiduPlatform,
-            'bilibili': BilibiliPlatform
+            'bilibili': BilibiliPlatform,
+            'guangyapan': GuangYaPanPlatform
         };
         
         // 实例缓存

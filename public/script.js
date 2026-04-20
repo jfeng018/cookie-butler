@@ -11,6 +11,7 @@ let platformCookies = {
     'ali': '',
     'uc': '',
     'uc_token': '',
+    'guangyapan': '',
     'baidu': '',
     'bilibili': ''
 };
@@ -169,9 +170,9 @@ function startPolling() {
                         savePlatformCookie(currentPlatform, newCookie);
                         saveToLocalStorage(currentPlatform, newCookie);
 
-                        updateStatus('扫码成功！Cookie已获取并自动缓存', 'success');
+                        updateStatus('扫码成功！结果已获取并自动缓存', 'success');
                         qrcodeImg.src = './shixiao.jpg';
-                        showToast('扫码成功！Cookie已自动缓存');
+                        showToast('扫码成功！结果已自动缓存');
                         break;
 
                     case 'SCANNED':
